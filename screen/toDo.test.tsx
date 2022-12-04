@@ -7,7 +7,7 @@ describe('Test ToDo screen', () => {
   test('adds a new TODO', async () => {
     const { store } = renderWithRedux(<ToDoScreen/>);
 
-    const input = await screen.findByTestId("toDoInput");
+    const input = await screen.findByTestId('toDoInput');
     console.log(input.toJSON())
     expect(input).toBeTruthy();
 
@@ -30,7 +30,7 @@ describe('Test ToDo screen', () => {
   test('update TODO', async () => {
     renderWithRedux(<ToDoScreen/>);
 
-    const input = await screen.findByTestId("toDoInput");
+    const input = await screen.findByTestId('toDoInput');
     const textToEnter = 'Test1';
     fireEvent.changeText(input, textToEnter);
     fireEvent.press(screen.getByText('Add'));
@@ -54,7 +54,7 @@ describe('Test ToDo screen', () => {
   test('remove TODO', async () => {
     renderWithRedux(<ToDoScreen/>);
 
-    const input = await screen.findByTestId("toDoInput");
+    const input = await screen.findByTestId('toDoInput');
 
     const toDo1 = 'Test1';
     fireEvent.changeText(input, toDo1);
