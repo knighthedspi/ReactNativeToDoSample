@@ -31,7 +31,7 @@ const ToDoScreen = () => {
                     style={styles.input}
                     onChangeText={setText}
                     value={text}
-                    placeholder="Enter here"
+                    placeholder='Enter here'
                 />
                 <Button
                     title={isAdded ? 'Add' : 'Update'}
