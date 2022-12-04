@@ -25,6 +25,7 @@ src
 * component
     * UI stateless components
 * screen
+    * UI statefull components
 * store
     * Redux store and reducer
 
