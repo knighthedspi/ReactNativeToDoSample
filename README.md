@@ -20,6 +20,7 @@ src
 ├── component
 ├── screen
 ├── store
+├── test
 ```
 
 * component
@@ -28,6 +29,8 @@ src
     * UI statefull components
 * store
     * Redux store and reducer
+* test
+    * test utilities    
 
 ### Getting started
 

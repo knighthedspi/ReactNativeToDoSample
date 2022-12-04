@@ -20,7 +20,9 @@ const ToDoItem: React.FC<{ item: ToDo, onRemove: (id: string) => void }> = (({ i
                 activeOpacity={0.5}
                 underlayColor={'transparent'}
                 onPress={() => onRemove(item.id)}>
-                <Text style={styles.remove}>
+                <Text 
+                    style={styles.remove}
+                    testID='remove'>
                     Remove
                 </Text>
             </TouchableHighlight>
