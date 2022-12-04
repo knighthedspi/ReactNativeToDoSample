@@ -28,12 +28,14 @@ const ToDoScreen = () => {
             />
             <SafeAreaView style={styles.inputContainer}>
                 <TextInput
+                    testID="toDoInput"
                     style={styles.input}
                     onChangeText={setText}
                     value={text}
                     placeholder='Enter here'
                 />
                 <Button
+                    testID="submit"
                     title={isAdded ? 'Add' : 'Update'}
                     onPress={() => {
                         isAdded ? dispatch(add(text)) : dispatch(update({ id: id, task: text }));
